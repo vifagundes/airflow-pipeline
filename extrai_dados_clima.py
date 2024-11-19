@@ -24,7 +24,7 @@ URL = join("https://weather.visualcrossing.com/VisualCrossingWebServices/rest/se
 
 dados = pd.read_csv(URL)
 
-file_path = f'/home/vini/Documents/datapipeline/airflow-pipeline/semana={data_inicio}/'
+file_path = f'/home/vifagundes/Documents/airflow-alura/airflow-pipeline/semana={data_inicio}/'
 os.mkdir(file_path)
 
 dados.to_csv(file_path + 'raw.csv')
